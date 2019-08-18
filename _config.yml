@@ -33,10 +33,11 @@ markdown: kramdown
 plugins:
   - jekyll-paginate
   - jekyll-gist
+permalink: /:title/
 
 compress_html:
   clippings: all
   comments: ["<!-- ", " -->"]
   endings: all
   ignore:
-    envs: ['development']
+    envs: ['development']  
