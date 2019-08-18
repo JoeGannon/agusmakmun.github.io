@@ -19,7 +19,7 @@ share:
   #fb_appid: 1749788565247320
 
 urls:
-    - text: About Me
+    - text: About
       url: /about/   
     - text: XML Feed
       url: /feed.xml
