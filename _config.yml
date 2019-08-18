@@ -1,50 +1,36 @@
-title: Stack Problems
+title: Joe Gannon
 description: My Personal Stack Problems
-author: Agus Makmun
-github: https://github.com/agusmakmun
-about: I'm Programmer for Python & Django. I've made quite a few web apps, especially on Django.
-disqus_shortname: stackproblems
+author: Joe Gannon
+github: https://github.com/joegannon
+about: Software Developer
+disqus_shortname: joegannon
 google_analytics: UA-XXXXXXXX-Y
 
-enableTags: true
-tagarray: []
+enableTags: false
 
-collections:
-  project:
-    output: true
-    permalink: /project/:path/
-
-social:
-    - icon: fa-facebook
-      link: "#"
+social:    
     - icon: fa-twitter
-      link: "#"
-    - icon: fa-linkedin
-      link: "#"
-    - icon: fa-stack-exchange
-      link: "#"
+      link: "https://twitter.com/_joegannon"    
     - icon: fa-github
-      link: "https://github.com/agusmakmun"
-
+      link: "https://github.com/JoeGannon"
+      
 share:
-  twitter_username: github.io
-  fb_appid: 1749788565247320
+  twitter_username: _joegannon
+  #fb_appid: 1749788565247320
 
 urls:
     - text: About Me
-      url: /about/
-    - text: My Projects
-      url: /projects/
+      url: /about/   
     - text: XML Feed
       url: /feed.xml
 
-url: "https://agusmakmun.github.io"
+url: "https://joegannon.dev"
 baseurl: ""
-paginate: 20
-per_page: 20
+paginate: 100
+per_page: 100
 paginate_path: "/page/:num/"
 markdown: kramdown
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-gist
 
