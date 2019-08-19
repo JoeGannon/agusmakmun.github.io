@@ -278,7 +278,7 @@ Sorry, I didn't write a UI for `Track Sales` so I won't be covering it. You can 
 
 The hardest part about developing an addon is testing it. Sadly, there's no WoW sandbox or "Addon Dev Island" you can go to and have unlimited ability to test. Everything will have to be done manually in game. One nice thing is that you can call your addon's functions any time with `/run MyAddon:FunctionName()`. With this it's usually best to isolate the WoW api calls as best you can and have most of your addon's logic in functions that you can easily test with `/run`. You're also going to have to sprinkle `Print` statements everywhere. To have code changes take effect run `/reloadui` or `/rl`.
 
-## What tripped me up
+## What Tripped Me Up
 
 A couple things that weren't immediately obvious to me was how to call functions in other files and how to reference Ace modules in other files. This is done by LUA variables that get passed in from WoW to every lua file. You can access them by placing `local addonName, ns = ...` at the top of any file. `addonName` will be a string containing your addon name and `ns` acts as a namespace. This [thread](https://www.wowinterface.com/forums/showthread.php?t=49349) details it well.
 
