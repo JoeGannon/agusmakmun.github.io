@@ -280,7 +280,7 @@ The hardest part about developing an addon is testing it. Sadly, there's no WoW 
 
 ## What Tripped Me Up
 
-A couple things that weren't immediately obvious to me was how to call functions in other files and how to reference Ace modules in other files. This is done by LUA variables that get passed in from WoW to every lua file. You can access them by placing `local addonName, ns = ...` at the top of any file. `addonName` will be a string containing your addon name and `ns` acts as a namespace. This [thread](https://www.wowinterface.com/forums/showthread.php?t=49349) details it well.
+A couple things that weren't immediately obvious to me was how to call functions in other files and how to reference Ace modules in other files. This is done by variables that get passed in from WoW to every lua file. You can access them by placing `local addonName, ns = ...` at the top of any file. `addonName` will be a string containing your addon name and `ns` acts as a namespace. This [thread](https://www.wowinterface.com/forums/showthread.php?t=49349) details it well.
 
 To see an example add two new files `MyAddonModule.lua` and `MyAddonHelper.lua` Don't forget to add them to the `toc` file!
 
