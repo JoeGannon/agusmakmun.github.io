@@ -171,7 +171,7 @@ end
 
 If you've been reading about addons you've probably heard about [Ace](https://www.wowace.com/projects/ace3/pages/getting-started). At first I thought there was something special between WoW and Ace but nope, Ace is nothing but a 3rd party wrapper library over the WoW API. It's designed to make _some_ things simpler to do, and I say some because for your use case Ace might just get in the way (I ditched AceDB). Only use Ace if you really need it, some modules have a steep learning curve and it's easy to get bogged down in the details of Ace instead of focusing on the important parts &ndash; writing your addon! In this post I'll show how to use `AceHook` and `AceConsole`. `Ace Console` will be used for chat commands and also contains Ace's `Print` function.
 
-Download Ace from the [site](https://www.wowace.com/projects/ace3) and extract the files somewhere. In your addon folder create a new folder named libs. Copy the folders `LibStub`, `AceAddon-3.0`, `AceConsole-3.0`, and `AceHook-3.0` into the libs folder. Next create a new file named `embeds.xml` in your addon's root folder and add the following
+Download Ace from the [site](https://www.wowace.com/projects/ace3) and extract the files somewhere. In your addon folder create a new folder named `libs`. Copy the folders `LibStub`, `AceAddon-3.0`, `AceConsole-3.0`, and `AceHook-3.0` into `libs`. Next create a new file named `embeds.xml` in your addon's root folder and add the following
 
 ```xml
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
