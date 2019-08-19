@@ -70,7 +70,7 @@ function MyAddon:AUTOFOLLOW_BEGIN(...)
 end
 ```
 
-`MyAddon = { }` is essentially just a namespace. LUA doesn't actually have namespaces but it's the same concept as many languages such as `c#`, `java`, and `c++`. With this we can avoid using global variables. 
+`MyAddon = { }` is essentially just a namespace. Lua doesn't actually have namespaces but it's the same concept as many languages such as `c#`, `java`, and `c++`. With this we can avoid using global variables. 
 
 Unfortunately, I can't share much about `CreateFrame` other than "this is how you register events". You'll also use frames if you want to create a UI.
 
