@@ -6,4 +6,4 @@ permalink: /about/
 
 Software developer and aspiring architect. Discussing random topics in tech. 
 
-<img src = "{{site.baseurl}}/static/img/email.png" />
+<img src = "{{site.url}}/static/img/email.png" />
