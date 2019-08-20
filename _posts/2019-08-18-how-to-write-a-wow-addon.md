@@ -276,7 +276,7 @@ Sorry, I didn't write a UI for `Track Sales` so I won't be covering it. You can 
 <a name="testing"></a>
 ## Testing 
 
-The hardest part about developing an addon is testing it. Sadly, there's no WoW sandbox or "Addon Dev Island" you can go to and have unlimited ability to test. Everything will have to be done manually in game. One nice thing is that you can call your addon's functions any time with `/run MyAddon:FunctionName()`. With this it's usually best to isolate the WoW api calls as best you can and have most of your addon's logic in functions that you can easily test with `/run`. You're also going to have to sprinkle `Print` statements everywhere. To have code changes take effect run `/reloadui` or `/rl`.
+The hardest part about developing an addon is testing it. Sadly, there's no WoW sandbox or "Addon Dev Island" you can go to and have unlimited ability to test. Everything will have to be done manually in game. One nice thing is that you can call your addon's functions any time with `/run MyAddon:FunctionName()`. With this it's usually best to isolate the WoW api calls as best you can and have most of your addon's logic in functions that you can easily test with `/run`. You're also going to have to sprinkle `Print` statements everywhere. There's a couple [debug commands](https://wowwiki.fandom.com/wiki/Blizzard_DebugTools) that may be useful as well. To have code changes take effect run `/reloadui` or `/rl`.
 
 ## What Tripped Me Up
 
