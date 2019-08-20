@@ -237,7 +237,7 @@ function MyAddon:AUTOFOLLOW_BEGIN(...)
 end
 ```
 
-Now your addon is bootstrapped with Ace. What changed is how the addon is initialized and the new `OnInitialize` and `OnEnable` methods. `OnInitialize` can be used to register events, create hooks, and anything else we might need to do on startup. 
+Now your addon is bootstrapped with Ace. What changed is how the addon is initialized and the new `OnInitialize` and `OnEnable` methods. `OnInitialize` can be used to register events, create hooks, and anything else you might need to do on startup. 
 
 If it all worked you should see `Hello from Ace Console` printed when you log in. Open the mailbox and follow random 
 players, those should still work too. 
