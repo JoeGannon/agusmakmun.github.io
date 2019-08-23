@@ -5,7 +5,7 @@ title:  "How to Write a WoW Addon"
 
 So you want to write a WoW addon? Well, you better get used to crappy docs, old websites, and skimpy examples. The fact that it's all community driven and nothing official from Blizzard doesn't make it any easier. I recently wrote my first addon for classic called [Track Sales](https://github.com/JoeGannon/TrackSales), so I know your pain. It's not all doom and gloom though, there's really only a few key concepts to understand and everything else falls into place. Though this guide isn't specific to retail or classic, please use the retail version to follow along. The version I wrote this with is `80200`.
 
-First and foremost, if your struggling with your addon, the best advice I could give you is not to google, not to read the docs, not to read this post, but to read other addons! I've found hands down that has been the best way to learn how to do things. Generally, googling and reading docs are great tools but when developing `Track Sales` nothing was better than seeing how other people did things. Aim for smaller addons that will be easier to understand. Reading other people's code is always an excellent way to learn (for anything). You'll be amazed at the things you can learn just from reading someone else's code. Clone your favorite open source project and check it out someday!
+First and foremost, if you're struggling with your addon, the best advice I could give you is not to google, not to read the docs, not to read this post, but to read other addons! I've found hands down that has been the best way to learn how to do things. Generally, googling and reading docs are great tools but when developing `Track Sales` nothing was better than seeing how other people did things. Aim for smaller addons that will be easier to understand. Reading other people's code is always an excellent way to learn (for anything). You'll be amazed at the things you can learn just from reading someone else's code. Clone your favorite open source project and check it out someday!
 
 ## Hello Azeroth
 
@@ -14,7 +14,7 @@ We'll start with a Hello World example. In `_retail_/Interface/Addons` create a 
 Next we need to tell WoW about our addon, this is done in the `toc` file. Create a new file named `MyAddon.toc` and add the below snippet. 
 
 ```
-# You're client version is probably different than 80200
+# Your client version is probably different than 80200
 # In game run "/run print((select(4, GetBuildInfo())))" and use that for the interface number
 
 ## Interface: 80200
@@ -92,7 +92,7 @@ hooksecurefunc("PickupContainerItem", function(...) MyAddon:PickupContainerItem(
 hooksecurefunc("TakeInboxMoney", function(mailId) MyAddon:TakeInboxMoney(mailId) end)
 
 function MyAddon:PickupContainerItem(container, slot)    
-    _, _, _, _, _, _, link = GetContainerItemInfo(container, slot)
+    local _, _, _, _, _, _, link = GetContainerItemInfo(container, slot)
 
     print(link)
 end
@@ -218,7 +218,7 @@ function MyAddon:OnInitialize()
 end
 
 function MyAddon:OnEnable()
-	--initialize Saved Variables and other start up tasks
+    --initialize Saved Variables and other start up tasks
 end
 
 function MyAddon:PickupContainerItem(container, slot)    
@@ -253,7 +253,7 @@ MyAddon = LibStub("AceAddon-3.0"):NewAddon("MyAddon", "AceConsole-3.0")
 
 function MyAddon:OnInitialize()				
 
-	self:RegisterChatCommand("myaddon", "SlashCommands")
+    self:RegisterChatCommand("myaddon", "SlashCommands")
 end
 
 -- /myaddon 1 2 3
