@@ -21,7 +21,7 @@ share:
 urls:
     - text: About
       url: /about/   
-    - text: XML Feed
+    - text: RSS Feed
       url: /feed.xml
 
 url: "https://joegannon.dev"
