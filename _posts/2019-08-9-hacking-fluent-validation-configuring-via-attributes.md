@@ -273,6 +273,4 @@ This proves the whole concept now! I was able to successfully create an `IValida
 
 As I said in the beginning it's generally a bad idea to bypass the public api of 3rd party libraries. Only hack libraries like this after you've explored all other options and considered the potential consequences. This was a fun project and a lesson learned why as a library author you should think about making more of your types public instead of internal. If these types were internal I'd never be able to extend it in this way. 
 
-Complete [gist](https://gist.github.com/JoeGannon/91e76605a2a7a7944a1a6ccde3abb3c3).
-
-ps: no one used this, everyone continued to create validators as normally, myself included
+Complete [gist](https://gist.github.com/JoeGannon/91e76605a2a7a7944a1a6ccde3abb3c3)
