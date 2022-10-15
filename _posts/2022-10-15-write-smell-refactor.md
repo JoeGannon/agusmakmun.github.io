@@ -17,7 +17,7 @@ Basically, every now and then take a step back and look at the bigger picture. A
 
 ## Refactor
 
-There's a ton to say here and I can't even begin to scratch the surface. I think it's important to gain a cursory knowledge of the [gang of four patterns](https://sourcemaking.com/design_patterns) and [refactoring techniques](https://sourcemaking.com/refactoring/refactorings). My personal list of the most important patterns are the Builder, Factory, Singleton, Adapter, Decorator, Chain of Responsibility, Command, and Strategy (my personal favorite and in my experience most applicable).
+There's a ton to say here and I can't even begin to scratch the surface. To start I think it's important to gain a cursory knowledge of the [gang of four patterns](https://sourcemaking.com/design_patterns) and [refactoring techniques](https://sourcemaking.com/refactoring/refactorings). My personal list of the most important patterns are Builder, Factory, Singleton, Adapter, Decorator, Chain of Responsibility, Command, and Strategy (my personal favorite and in my experience most applicable).
 
 You don't have to go down the rabbit hole completely with the gang of four patterns and learn everything inside and out. The important part is simply knowing they exist. Seriously, that's it. Just know they exist and the problems they solve. When a use case comes along you'll be able to recognize a pattern may fit. It's common to study these and think you'll never know when to apply them, but trust me when I say you just will. 
 
@@ -87,11 +87,11 @@ public class TableColumn<TModel, TProperty>
     {
         var value = GetProperty(model).ToString();
 
-        if(TextBox)
+        if (TextBox)
         {
             value = $"<input type=\"text\" value=\"{value}\">"
         }
-        else if(HyperLink)
+        else if (HyperLink)
         {
             value = $"<a href=\"{value}\">{LinkText}</a>";
         }
